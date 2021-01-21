@@ -1,0 +1,29 @@
+<%- include('partials/_head.ejs') %>
+
+	<body>
+		<section>
+			<h1>Super secret page !</h1>
+			<% if(isLoggedIn){ %>
+				<h2>Because it was two squared.</h2>
+				<% } else { %>
+					<h2>Why was 4 afraid to ask 5 out?</h2>
+					<% } %>
+		</section>
+		<section>
+			<% if(isLoggedIn){ %>
+				<h2>Hi <%= email %>
+				</h2>
+				<form action="/logout" method="POST">
+					<button type="submit">LOGOUT</button>
+				</form>
+				<% } else { %>
+					<h2>Please <a href="/login">login</a> to find the answer</h2>
+					<% } %>
+						<h3>
+							<%= date %>
+						</h3>
+
+		</section>
+	</body>
+
+	</html>
