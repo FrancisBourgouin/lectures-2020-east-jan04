@@ -1,0 +1,7 @@
+- Setup 
+- Concept of state
+- Error handling
+- New syntax (JSX)
+- CSS
+- Data flow
+- Children (props)
