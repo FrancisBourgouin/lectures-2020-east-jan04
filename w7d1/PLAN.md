@@ -38,3 +38,22 @@ body
   <TodoForm>
   form
     input todo content
+
+## Data
+
+TodoListItem ->
+
+{
+  text:"",
+  completed:false/true
+}
+
+TodoList
+
+[
+  {todolistitem}
+  {todolistitem}
+  {todolistitem}
+  {todolistitem}
+  {todolistitem}
+]

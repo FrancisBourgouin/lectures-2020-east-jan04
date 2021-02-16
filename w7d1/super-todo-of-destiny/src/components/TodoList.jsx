@@ -13,6 +13,7 @@ export default function TodoList(props) {
   return (
     <ul>
       {betterParsedTodos}
+      <button onClick={props.wassup}>sup</button>
     </ul>
   )
 }
