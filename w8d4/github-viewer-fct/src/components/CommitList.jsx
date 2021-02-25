@@ -1,6 +1,7 @@
 import SingleCommit from './SingleCommit'
 
 export default function CommitList(props) {
+
   const parsedCommits = props.commitData && props.commitData.map(commitObj => (
     <SingleCommit
       key={commitObj.sha}
